@@ -1,7 +1,7 @@
 "use strict";// treat all js code as newer version
 
-let age = 18
-let valuecorrect = true
+let age = 18;
+let valuecorrect = true;
 
 
 // 2 to the power 53
@@ -14,4 +14,4 @@ let valuecorrect = true
 
 // object
 
-console.log(typeof null) // object
+console.log(typeof null); // object
