@@ -11,4 +11,4 @@ console.log(score);
 // true => 1; false => 0
 
 console.log("2" < "3");
-console.log("2" === 2);
+console.log("2" === 2);//true-false
