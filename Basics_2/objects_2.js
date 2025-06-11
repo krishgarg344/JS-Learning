@@ -31,3 +31,13 @@ console.log(Object.keys(instaUser));
 console.log(Object.values(instaUser));
 
 console.log(instaUser.hasOwnProperty('isOnline'));
+
+const course = {
+    coursenme : "js programming",
+    price : "999",
+    student : "User_PRO"
+}
+
+// de structuring
+const {student : usr} = course
+console.log(usr);
