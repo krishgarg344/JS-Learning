@@ -29,3 +29,5 @@ console.log(obj3);
 
 console.log(Object.keys(instaUser));
 console.log(Object.values(instaUser));
+
+console.log(instaUser.hasOwnProperty('isOnline'));
