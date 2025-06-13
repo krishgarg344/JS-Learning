@@ -31,7 +31,7 @@ function handleIt(usr_info) {
 }
 handleIt(info)
 
-// .... (rest/ spread operator)
+// ... (rest/ spread operator)
 
 function AP(a, ...An){
     return An
@@ -41,6 +41,7 @@ console.log("AP :",AP(2, 0, 2, 4, 6, 8, 10));
 function dataHandling(infom){
     console.log(`username is ${infom.username}`);
 }
+
 
 dataHandling({
     username : "pro_persn"
