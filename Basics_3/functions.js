@@ -30,3 +30,18 @@ function handleIt(usr_info) {
     console.log(`Username : ${usr_info.username},\nContact : ${usr_info.contact}`);    
 }
 handleIt(info)
+
+// .... (rest/ spread operator)
+
+function AP(a, ...An){
+    return An
+}
+console.log("AP :",AP(2, 0, 2, 4, 6, 8, 10));
+
+function dataHandling(infom){
+    console.log(`username is ${infom.username}`);
+}
+
+dataHandling({
+    username : "pro_persn"
+})
