@@ -22,3 +22,13 @@ function one(){
 }
 
 one()
+
+if (true) {
+    const name = "user"
+    if (name === "user") {
+        const site = "youtube"
+        console.log(name,""+ site);
+    }
+    // console.log(site);
+}
+// console.log(name);
