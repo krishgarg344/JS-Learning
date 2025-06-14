@@ -7,3 +7,18 @@ if (true) {
 
 console.log(a);
 // console.log(b);
+
+function one(){
+    const username = "userrr"
+
+    function two(){
+        const website = "youtube.com"
+        console.log(username);
+    }
+
+    // console.log(website);
+
+    two()
+}
+
+one()
