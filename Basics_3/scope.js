@@ -32,3 +32,16 @@ if (true) {
     // console.log(site);
 }
 // console.log(name);
+
+console.log(addone(5));
+function addone(num) {
+    return num + 1
+}
+addone(5)
+
+// console.log(addtwo(4));
+const addtwo = function(num) { //also a function but also called expression
+    return num  + 2
+}
+addtwo(4)
+// here function is stored in a variable
