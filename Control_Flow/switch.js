@@ -6,7 +6,7 @@
 //     default:
 //         break;
 // }
-const month = 1
+const month = 1 // in same way we can use string
 switch (month) {
     case 1 :
         console.log("Jan");
