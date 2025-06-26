@@ -41,4 +41,7 @@ const Obj = {
 for (const key in Obj) {
    console.log(key, ":-", Obj[key]);
 }
- 
+const lang = ["js", "css", "cpp", "c"]
+for (const key in lang) {
+    console.log(lang[key]);
+}
