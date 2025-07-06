@@ -41,9 +41,12 @@ console.log(newnums);
 
 const int = [1, 2, 3]
 
-const sum = int.reduce(function (acc, curr) {
-    console.log(`accumulator : ${acc} and current value : ${curr}`);
-    return acc + curr
-}, 0)
+// const sum = int.reduce(function (acc, curr) {
+//     console.log(`accumulator : ${acc} and current value : ${curr}`);
+//     return acc + curr
+// }, 0)
+
+const sum = int.reduce((acc, curr) => acc + curr, 0)
 
 console.log(sum)
+
