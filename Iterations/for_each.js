@@ -50,3 +50,23 @@ const sum = int.reduce((acc, curr) => acc + curr, 0)
 
 console.log(sum)
 
+const list = [
+    {
+        item : "handle",
+        price : 2000
+    },
+    {
+        item : "door knockers",
+        price : 799
+    },
+    {
+        item : "brackets",
+        price : 699
+    },
+    {
+        item : "dome",
+        price : 299
+    },
+]
+const total = list.reduce( (acc, product) => acc + product.price, 0)
+console.log(total);
