@@ -7,13 +7,23 @@
 </head>
 <body style="background-color: #212121; color: #fff;">
     <div class="week">
-    <div class="day">Monday</div>
-    <div class="day">Tuesday</div>
-    <div class="day">Wedday</div>
-    <div class="day">Thursday</div>
-    <div class="day">Friday</div>
-    <div class="day">Saturday</div>
-    <div class="day">Sunday</div>
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wedday</div>
+        <div class="day">Thursday</div>
+        <div class="day">Friday</div>
+        <div class="day">Saturday</div>
+        <div class="day">Sunday</div>
     </div>
 </body>
+<script>
+    const p = document.querySelector('.week')
+    //console.log(p);
+    //console.log(p.child);
+    //console.log(p.child[1].innerHTML);
+    for (let i = 0; i < p.children.length; i++) {
+        console.log(p.children[i].innerHTML);
+    }
+    p.children[1].style.color = 'orange'
+</script>
 </html>
