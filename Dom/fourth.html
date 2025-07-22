@@ -31,5 +31,22 @@
         document.querySelector('.language').appendChild(li)
     }
     optimalAdding("HTML")
+
+    // replace 
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.innerHTML = "Typescript"
+
+    // method 2 of replacing
+    const newLang = document.createElement('li')
+    newLang.textContent = "goLang"
+    firstLang.replaceWith(newLang)
+
+    // method 3
+    const secondLang = document.querySelector("li:nth-child(2)")
+    secondLang.outerHTML = '<li>Java</li>'
+
+    // remove
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
 </script>
 </html>
