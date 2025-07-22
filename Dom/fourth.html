@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body style="background-color : black; color : whitesmoke">
+    <ul class="language">
+        <li>Javascript</li>
+        <li>C#</li>
+        <li>Python</li>
+    </ul>
+</body>
+<!-- <script>
+    const li = document.createElement('li')
+    li.innerText = "C++"
+    document.body.getElementsByClassName("language")[0].appendChild(li)
+</script> -->
+<script>
+    function addLang(langname){
+        const li = document.createElement('li');
+        li.innerHTML = langname
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang("C++")
+
+    function optimalAdding(langname){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    }
+    optimalAdding("HTML")
+</script>
+</html>
