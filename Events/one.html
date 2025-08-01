@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="background-color: #414141; color: rgb(3, 137, 255)">
+    <h2>AI Visualized</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="brain" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ7dxsf0z13Pe2ZrbKrzHLZ_8EPX7d1PMPO1xUA5iD0VkZ4sN133WXvXRrEbEdFzmkHcs&usqp=CAU"></li>
+            <li><img width="200px" id="robot" src="https://cdn.britannica.com/47/246247-050-F1021DE9/AI-text-to-image-photo-robot-with-computer.jpg"></li>
+            <li><img width="200px" id="human" src="https://blog.lexcheck.com/hubfs/shutterstock_1564233937-jpg.jpeg"></li>
+            <li><img width="200px" id="chip" src="https://www.workitdaily.com/media-library/artificial-intelligence-ai-technology-concept.jpg?id=34199573&width=1200&height=800&quality=85&coordinates=84%2C0%2C84%2C0"></li>
+            <li><a style="color:aliceblue;" href="https://spotify.com" id="spotify">Spotify</a></li>
+        </ul>
+    </div>
+</body>
+<script>
+    //document.getElementById('human').onclick = function(){
+    //    alert('Human touched')
+    //}
+    document.getElementById('robot').addEventListener('click', function(e){
+        e.stopPropagation()
+        console.log('You touched robot')
+    })
+    document.getElementById('human').addEventListener('click', function(e){
+        alert('you touched human');
+    })
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+    document.getElementById('images').addEventListener('click', function(){
+        console.log('You touched inside the ul');
+    })
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'img'){
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    })
+    
+</script>
+</html>
