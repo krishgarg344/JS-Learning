@@ -73,3 +73,24 @@ async function consumePromiseFive(){
     }
 }
 consumePromiseFive()
+
+// api handling
+async function getData(){
+    try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users')
+        console.log(response);
+        const data = response.json()
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+}
+getData()
+
+fetch ('https://jsonplaceholder.typicode.com/users').then((response) => {
+    return response.json()
+}).then((data) => {
+    console.log(data);
+}).catch((error) => {
+    console.log("E: ", error);
+})

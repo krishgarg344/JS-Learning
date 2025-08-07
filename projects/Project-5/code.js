@@ -1,5 +1,5 @@
 const start = document.querySelector('#start');
-    const stop = document.querySelector('#stop');
+const stp = document.querySelector('#stop');
 
     const randomColor = function(){
         const hex = '0123456789ABCDEF'
@@ -20,7 +20,7 @@ const start = document.querySelector('#start');
     }
     start.addEventListener('click', execute);
     
-    stop.addEventListener('click', function(){
-        clearInterval(interval);
-        console.log("Stopped and this color sustains");
-    })
+stp.addEventListener('click', function(){
+    clearInterval(interval);
+    console.log("Stopped and this color sustains");
+})
